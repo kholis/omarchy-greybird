@@ -1,30 +1,37 @@
-mode = "dark"
+mode = "light"
 
-# Terminal palette follows Greybird's dark variant, keeping the light GTK
-# side untouched:
-#   dark/gtk-3.0/_colors.scss: bg_color #3b3e3f, base_color #2d2e30,
-#   fg_color #eeeeec, selected_bg_color darken(#398ee7, 20%) = #145ba6,
-#   Tango accent colors. The alacritty/foot/ghostty/kitty configs shipped in
-#   this theme use the exact same palette.
+# The shell palette follows Greybird's LIGHT variant, matching the GTK look
+# (gtk-2.0/gtkrc): bg_color #cecece, fg_color #3c3c3c, text_color #212121,
+# selected_bg_color #398ee7 with white selection text, and the greyish
+# #e8e8e8 base color this repo re-tones Greybird with. Every shell surface
+# (OSD card, bar, menus, notifications, lock screen) therefore stays light
+# like Omarchy's other light themes (catppuccin-latte, flexoki-light), which
+# is also why the OSD icon and readout (#3c3c3c ink) stay readable.
 #
-# GTK/GUI apps stay on Greybird light: the theme-set hook in
-# ~/.config/omarchy/hooks/theme-set.d/ re-applies Greybird + prefer-light
-# after every theme change, and the shell.toml, chromium.theme, obsidian.css
-# and hyprland-preview-share-picker.css files beside this file pin the bar,
-# browser, Obsidian and share picker to the light palette.
+# Terminals are the one dark exception: the theme ships its own
+# foot.ini/alacritty.toml/kitty.conf/ghostty.conf pinned to Greybird-dark +
+# the Tango palette below, and Omarchy's template generator never overwrites
+# configs a theme ships itself. The dark/gtk-3.0/_colors.scss values those
+# files carry (bg #3b3e3f, base #2d2e30, fg #eeeeec) live only there.
+#
+# The theme-set hook in ~/.config/omarchy/hooks/theme-set.d/ re-applies
+# Greybird + prefer-light to GTK after every theme change, and shell.toml,
+# chromium.theme, obsidian.css and hyprland-preview-share-picker.css beside
+# this file pin the bar, browser, Obsidian and share picker to the same
+# light greys.
 accent = "#398ee7"
-selection = "#145ba6"
+selection = "#398ee7"
 muted = "#9d9d9d"
 
-background = "#3b3e3f"
-dark_background = "#2d2e30"
-darker_background = "#232426"
-lighter_background = "#4c5052"
+background = "#cecece"
+dark_background = "#c4c4c4"
+darker_background = "#bababa"
+lighter_background = "#e8e8e8"
 
-foreground = "#eeeeec"
+foreground = "#3c3c3c"
 dark_foreground = "#9d9d9d"
-light_foreground = "#ffffff"
-bright_foreground = "#ffffff"
+light_foreground = "#5c5c5c"
+bright_foreground = "#212121"
 
 red = "#cc0000"
 yellow = "#c4a000"
