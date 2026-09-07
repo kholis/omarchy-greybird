@@ -1,0 +1,11 @@
+# Xubuntu-style Greybird theming.
+# Used by GTK2 apps and by Qt5/Qt6 apps through the gtk2 platform theme
+# (qt5-styleplugins / qt6gtk2), which reads this file.
+gtk-theme-name="Greybird"
+gtk-icon-theme-name="elementary-xfce"
+gtk-font-name="Noto Sans Regular 9"
+
+# Font rendering: anti-aliasing on, slight hinting, RGB subpixel order.
+gtk-xft-antialias=1
+gtk-xft-hintstyle="hintslight"
+gtk-xft-rgba="rgb"

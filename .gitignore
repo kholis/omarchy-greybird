@@ -1,0 +1,7 @@
+# AUR build leftovers
+*.pkg.tar.*
+src/
+pkg/
+
+# backups created by install.sh
+*.bak.*

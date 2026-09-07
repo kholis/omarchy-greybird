@@ -1,0 +1,43 @@
+mode = "dark"
+
+# Terminal palette follows Greybird's dark variant, keeping the light GTK
+# side untouched:
+#   dark/gtk-3.0/_colors.scss: bg_color #3b3e3f, base_color #2d2e30,
+#   fg_color #eeeeec, selected_bg_color darken(#398ee7, 20%) = #145ba6,
+#   Tango accent colors. The alacritty/foot/ghostty/kitty configs shipped in
+#   this theme use the exact same palette.
+#
+# GTK/GUI apps stay on Greybird light: the theme-set hook in
+# ~/.config/omarchy/hooks/theme-set.d/ re-applies Greybird + prefer-light
+# after every theme change, and the shell.toml, chromium.theme, obsidian.css
+# and hyprland-preview-share-picker.css files beside this file pin the bar,
+# browser, Obsidian and share picker to the light palette.
+accent = "#398ee7"
+selection = "#145ba6"
+muted = "#9d9d9d"
+
+background = "#3b3e3f"
+dark_background = "#2d2e30"
+darker_background = "#232426"
+lighter_background = "#4c5052"
+
+foreground = "#eeeeec"
+dark_foreground = "#9d9d9d"
+light_foreground = "#ffffff"
+bright_foreground = "#ffffff"
+
+red = "#cc0000"
+yellow = "#c4a000"
+orange = "#ce5c00"
+green = "#4e9a06"
+cyan = "#06989a"
+blue = "#3465a4"
+magenta = "#75507b"
+brown = "#8f5902"
+
+bright_red = "#ef2929"
+bright_yellow = "#fce94f"
+bright_green = "#8ae234"
+bright_cyan = "#34e2e2"
+bright_blue = "#729fcf"
+bright_magenta = "#ad7fa8"
